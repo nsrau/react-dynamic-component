@@ -1,5 +1,10 @@
 # POC react-dynamic-component
 
+## This is a proof of concept for to dynamic import external component,library with react
+
+![PluginOne Demo](plublic/assets/img/pluginone.gif)
+![PluginTwo Demo](plublic/assets/img/plugintwo.gif)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

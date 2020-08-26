@@ -49,11 +49,17 @@ function App() {
       </p>
 
       <p>
-        <code>
-          another plugin 4 test
-          https://gist.githubusercontent.com/nsrau/1deb562e8df4f0a8517db36c7d2e020e/raw/770082dce1c0d80ae60d88ab43ecf33b5a75bd62/ExampleComponent.js
-          PluginOne
-        </code>
+
+        <b>another plugin 4 test</b>
+        <br />
+        <i><b>URL component:</b></i>
+        <br />
+        https://gist.githubusercontent.com/nsrau/1deb562e8df4f0a8517db36c7d2e020e/raw/770082dce1c0d80ae60d88ab43ecf33b5a75bd62/ExampleComponent.js
+        <br />
+        <i><b>plugin name:</b></i>
+        <br />
+        PluginOne
+
       </p>
 
       <p>
