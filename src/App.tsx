@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './App.css';
 window.React = React
 const scriptGistUrl = 'https://gist.githubusercontent.com/nsrau/5e9e6961ac11d8cefe3cd401d48ba6d7/raw/76d3a3f96bef78ae65b68fec52ddb500f470d5be/PluginTwo.js'
@@ -8,10 +8,6 @@ function App() {
   const [count, setCount] = useState(0)
   const [currentUrl, setCurrentUrl] = useState(scriptGistUrl)
   const [currentPluginName, setCurrentPluginName] = useState('PluginTwo')
-
-  useEffect(() => {
-
-  }, [count])
 
   const getDynamicComponent = async () => {
     console.log('dynamic component')
