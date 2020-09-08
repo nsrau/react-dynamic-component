@@ -1,13 +1,16 @@
 import React, { useState } from 'react';
 import './App.css';
-window.React = React
-const scriptGistUrl = 'https://gist.githubusercontent.com/nsrau/5e9e6961ac11d8cefe3cd401d48ba6d7/raw/76d3a3f96bef78ae65b68fec52ddb500f470d5be/PluginTwo.js'
+import { _CSS_ } from './css';
+
+window.React = React;
+const scriptGistUrl = 'https://gist.githubusercontent.com/nsrau/69a96359ae04b77862ff2a5d40ccb0b1/raw/0eb1aac2e946f429f39868bd7d9dd378e7e9c209/PluginGrid.js'
 
 function App() {
   const [currentPlugin, setCurrentPlugin] = useState<any>(null)
   const [count, setCount] = useState(0)
   const [currentUrl, setCurrentUrl] = useState(scriptGistUrl)
-  const [currentPluginName, setCurrentPluginName] = useState('PluginTwo')
+  const [currentPluginName, setCurrentPluginName] = useState('PluginGrid')
+  const [css, setCss] = useState(_CSS_)
 
   const getDynamicComponent = async () => {
     console.log('dynamic component')
@@ -45,6 +48,21 @@ function App() {
         />
       </p>
       <p>
+        <label htmlFor="component">plugin css</label>
+        <input
+          id={'css'}
+          type="text"
+          style={{ width: '100%' }}
+          onChange={(e) => setCss(e.target.value)}
+          value={css}
+        />
+        <style
+        dangerouslySetInnerHTML={{
+          __html: css
+        }}
+        />
+      </p>
+      <p>
         app state count: {count}
       </p>
 
@@ -65,7 +83,7 @@ function App() {
       <p>
         <button
           onClick={getDynamicComponent}
-        >get plugin</button>
+        >load plugin</button>
       </p>
 
       <hr />
