@@ -2,6 +2,8 @@
 
 ## This is a proof of concept for to dynamic import external component,library with react
 
+[open demo](https://nsrau.github.io/react-dynamic-component/)
+
 ![PluginOne Demo](https://github.com/nsrau/react-dynamic-component/blob/master/public/assets/img/pluginone.gif)
 ![PluginTwo Demo](https://github.com/nsrau/react-dynamic-component/blob/master/public/assets/img/plugintwo.gif)
 
